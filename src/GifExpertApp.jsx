@@ -1,39 +1,37 @@
 import { useState } from 'react';
 import { AddCategory } from './components/AddCategory';
+import { GifGrid } from './components/GifGrid';
 
 export const GifExpertApp = () => {
 
-    const [ categories, setCategories ] = useState(['One Punch', 'Samurai X', 'Dragon Ball']);
+    const [categories, setCategories] = useState(['']);
 
-    const onAddCategory = ( newCategory ) => {
+    const onAddCategory = (newCategory) => {
 
-        if ( categories.includes( newCategory )){
+        if (categories.includes(newCategory)) {
 
             return alert(`Category: ${newCategory} already exists!`)
         };
-        setCategories( [newCategory, ...categories] );
+        setCategories([newCategory, ...categories]);
         // setCategories( (categories) => [...categories, 'New Game'] );
     }
 
     return (
         <>
-            {/* Title */}
             <h1>GifExpertApp</h1>
-            {/* Input */}
 
-            <AddCategory 
-                // setCategories = { setCategories }
-                onNewCategory = { onAddCategory }
+            <AddCategory
+                onNewCategory={onAddCategory}
             />
 
-            {/* List of Gif */}
-            {/* <button onClick = { onAddCategory }> Add new Category </button> */}
-            <ol>
-                { categories.map( (category) => {
-                    return <li key = { category }> { category } </li>
-                }) }
-            </ol>
-                {/* Gif Item */}
+            {
+                categories.map((category) => (
+                    <GifGrid 
+                        key={category}
+                        category={category}
+                    />
+                ))
+            }
 
         </>
     );
