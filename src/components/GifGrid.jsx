@@ -1,4 +1,4 @@
-import { GifGridItem } from './GifGridItem';
+import { GifGridItem } from './index';
 import { useFetchGifs } from '../hooks/useFetchGifs';
 
 export const GifGrid = ({ category }) => {
@@ -8,7 +8,7 @@ export const GifGrid = ({ category }) => {
     return (
         <>
             <h3> { category } </h3>
-            
+
             { isLoading && <p>Loading...</p> }
 
             <div className='card-grid'>
