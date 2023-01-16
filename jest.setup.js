@@ -1,1 +1,1 @@
-import 'isomorphic-fetch';
+import 'isomorphic-fetch'; // <-- Add this to don't have problems with fetch
