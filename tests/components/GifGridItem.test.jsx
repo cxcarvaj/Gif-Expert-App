@@ -1,5 +1,5 @@
-import { GifGridItem } from "../../src/components";
-import { render, screen } from "@testing-library/react";
+import { GifGridItem } from '../../src/components';
+import { render, screen } from '@testing-library/react';
 
 describe("Tests in <GifGrid />", () => {
 

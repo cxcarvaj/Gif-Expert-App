@@ -1,5 +1,5 @@
-import { AddCategory } from "../../src/components/AddCategory";
-import { render, screen, fireEvent } from "@testing-library/react";
+import { AddCategory } from '../../src/components/AddCategory';
+import { render, screen, fireEvent } from '@testing-library/react';
 
 describe('Tests in <AddCategory />', () => {
 
