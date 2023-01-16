@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Tests in <GifGridItem /> should match with the snapshot 1`] = `
+exports[`Tests in <GifGrid /> should match with the snapshot 1`] = `
 <div>
   <div
     class="card"
