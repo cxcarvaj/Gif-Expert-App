@@ -1,7 +1,7 @@
-import { GifGridItem } from "../../src/components/GifGridItem";
-import { render, screen } from "@testing-library/react";
+import { GifGridItem } from '../../src/components';
+import { render, screen } from '@testing-library/react';
 
-describe("Tests in <GifGridItem />", () => {
+describe("Tests in <GifGrid />", () => {
 
     const title = 'The Office';
     const url = 'https://media.giphy.com/media/3o7TKsQ8UQY1NlC5aU/giphy.gif';
