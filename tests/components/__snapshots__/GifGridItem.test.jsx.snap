@@ -7,6 +7,7 @@ exports[`Tests in <GifGridItem /> should match with the snapshot 1`] = `
   >
     <img
       alt="The Office"
+      src="https://media.giphy.com/media/3o7TKsQ8UQY1NlC5aU/giphy.gif"
     />
     <p>
       The Office
